@@ -1,0 +1,55 @@
+@import '../../../common/getvw.scss';
+
+.main_text {
+  position: fixed;
+
+  transform: translate(-50%, 0%);
+
+  max-width: 630px;
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main_text {
+    width: 50%;
+    top: 10%;
+    left: calc(50% - 50px);
+    // margin-top: pcvw(-430px);
+
+    p {
+      font-size: 23px;
+      line-height: 33px;
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+  .main_text {
+    width: 60%;
+    top: 20%;
+    left: 50%;
+    // margin-top: tabvw(-450px);
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main_text {
+    width: 80%;
+    top: 16%;
+    left: 50%;
+    // margin-top: -300px;
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}

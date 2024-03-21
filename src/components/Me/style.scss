@@ -1,0 +1,37 @@
+@import '../../common/getvw.scss';
+
+.my_me {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1601px) {
+  .my_me {
+    left: 441px;
+    top: 140px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1024px) {
+  .my_me {
+    left: pcvw(441px);
+    top: pcvw(140px);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+  .my_me {
+    left: tabvw(441px);
+    top: tabvw(140px);
+  }
+}
+
+@media (max-width: 768px) {
+  .my_me {
+    left: movw(441px);
+    top: movw(140px);
+  }
+}
